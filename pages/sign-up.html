@@ -8,10 +8,12 @@
     <link
       rel="shortcut icon"
       href="../assets/icons/trello-favicon.png"
-      type="image/x-icon" />
+      type="image/x-icon"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <title>Sign up</title>
   </head>
   <body>
@@ -22,20 +24,23 @@
       <form action="" method="GET" id="sign-up-form">
         <div class="input-div">
           <input
-            type="email"
+            type="text"
             id="email"
             name="email"
-            placeholder="Email address" />
+            placeholder="Email address"
+          />
           <input
             type="text"
             id="username"
             name="username"
-            placeholder="Username" />
+            placeholder="Username"
+          />
           <input
             type="password"
             id="password"
             name="password"
-            placeholder="Password" />
+            placeholder="Password"
+          />
           <i class="fa-solid fa-eye"></i>
           <i class="fa-solid fa-eye-slash"></i>
         </div>
@@ -101,7 +106,8 @@
         </div>
       </div>
     </div>
-
+    <!-- bình thường thì sẽ khai báo hàm onsubmit cho form ở trong file js, form trong file html sẽ gọi hàm onsubmit trong file js đó.
+   nhưng ở đây ng ta khai báo form trong html trước rồi mới load file js., trong file js ng ta search form trong file html rồi gán sự kiện onsubmit vào. -->
     <script src="../js/sign-up.js"></script>
   </body>
 </html>
